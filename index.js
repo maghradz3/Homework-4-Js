@@ -21,7 +21,7 @@ decreaseWidth.addEventListener("click", function () {
 });
 
 forms.addEventListener("submit", (e) => {
-  event.preventDefault();
+  e.preventDefault();
   const login = nameInput.value;
   const mail = mailInput.value;
   const age = ageInput.value;
@@ -54,4 +54,7 @@ clearBtn.addEventListener("click", () => {
   nameInput.value = "";
   mailInput.value = "";
   ageInput.value = "";
+  nameInput.classList.remove("border");
+  mailInput.classList.remove("border");
+  ageInput.classList.remove("border");
 });
