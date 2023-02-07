@@ -13,11 +13,7 @@ const confirmBtn = document.querySelector("#confirmBtn");
 const clearBtn = document.querySelector(".clearBtn");
 
 increaseWidth.addEventListener("click", function () {
-  console.log("hello levan");
   emptyBox.classList.toggle("increase");
-  if (emptyBox.classList.toggle("increase")) {
-    console.log("aeee");
-  }
 });
 
 decreaseWidth.addEventListener("click", function () {
